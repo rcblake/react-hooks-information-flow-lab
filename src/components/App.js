@@ -6,8 +6,8 @@ import Header from "./Header";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  function onDarkModeClick() {
-    setIsDarkMode((isDarkMode) => !isDarkMode);
+  function onDarkModeClick(e) {
+    setIsDarkMode((isDark) => !isDark);
   }
 
   return (
