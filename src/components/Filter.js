@@ -1,7 +1,7 @@
-function Filter({ handleCategoryChange }) {
+function Filter({ onCategoryChange }) {
   function filterOnChange(e) {
     const filterSelect = e.target.value;
-    handleCategoryChange(filterSelect);
+    onCategoryChange(filterSelect);
   }
 
   return (

@@ -5,7 +5,7 @@ import Filter from "./Filter";
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  function handleCategoryChange(selectedCategory) {
+  function onCategoryChange(selectedCategory) {
     setSelectedCategory(selectedCategory);
   }
 
@@ -19,7 +19,7 @@ function ShoppingList({ items }) {
     <div className="ShoppingList">
       <Filter
         selectedCategory={selectedCategory}
-        handleCategoryChange={handleCategoryChange}
+        onCategoryChange={onCategoryChange}
       />
       <ul className="Items">
         {itemsToDisplay.map((item) => (
